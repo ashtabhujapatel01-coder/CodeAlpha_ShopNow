@@ -38,13 +38,6 @@ npm start
 
 Open **http://localhost:3000** in your browser.
 
-## Default Credentials
-
-| Role  | Email             | Password  |
-|-------|-------------------|-----------|
-| Admin | admin@shop.com    | admin123  |
-| User  | Register yourself | —         |
-
 ## Project Structure
 
 ```
