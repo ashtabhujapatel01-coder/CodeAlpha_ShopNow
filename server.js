@@ -295,6 +295,5 @@ app.get('*', (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`\n🛒  ShopNow running at http://localhost:${PORT}`);
-  console.log('    Admin: admin@shop.com / admin123\n');
+  console.log(`\n🛒  ShopNow running at http://localhost:${PORT}\n`);
 });

@@ -719,7 +719,6 @@ function renderLogin() {
         </button>
         <div class="form-divider">or</div>
         <div class="form-link">Don't have an account? <a href="/register" data-link="/register">Register</a></div>
-        <div class="form-link" style="margin-top:8px;font-size:.82rem;color:var(--muted)">Admin demo: admin@shop.com / admin123</div>
       </div>
     </div>
   `);

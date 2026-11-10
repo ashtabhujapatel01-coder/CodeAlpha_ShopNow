@@ -12,8 +12,11 @@ categoryNames.forEach(name => {
 });
 
 // ─── Admin user ───────────────────────────────────────────────────────────────
-if (!Users.findByEmail('admin@shop.com')) {
-  Users.create({ name: 'Admin', email: 'admin@shop.com', password: bcrypt.hashSync('admin123', 10), is_admin: true });
+const adminEmail = process.env.ADMIN_EMAIL || 'admin@example.com';
+const adminPassword = process.env.ADMIN_PASSWORD || 'ChangeMe123!';
+
+if (!Users.findByEmail(adminEmail)) {
+  Users.create({ name: 'Admin', email: adminEmail, password: bcrypt.hashSync(adminPassword, 10), is_admin: true });
 }
 
 // ─── Products ─────────────────────────────────────────────────────────────────
@@ -115,4 +118,4 @@ if (Products.all().length === 0) {
 }
 
 console.log('\n🌱  Seed complete!');
-console.log('   Admin login → admin@shop.com / admin123\n');
+console.log('   Admin user created.\n');
