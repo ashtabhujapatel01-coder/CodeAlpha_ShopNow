@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ShopNow – Your One-Stop Store</title>
+  <link rel="stylesheet" href="/css/style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+<!-- ───────────────────── NAVBAR ───────────────────── -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="/" class="nav-brand" data-link="/">
+      <i class="fa fa-shopping-bag"></i> ShopNow
+    </a>
+
+    <div class="nav-search">
+      <input type="text" id="searchInput" placeholder="Search products…" autocomplete="off"/>
+      <button id="searchBtn"><i class="fa fa-search"></i></button>
+    </div>
+
+    <div class="nav-actions">
+      <a href="/cart" class="nav-icon" data-link="/cart" title="Cart">
+        <i class="fa fa-shopping-cart"></i>
+        <span class="badge" id="cartBadge">0</span>
+      </a>
+      <div class="nav-user" id="navUser">
+        <!-- filled by JS -->
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- ───────────────────── TOAST ───────────────────── -->
+<div id="toast" class="toast"></div>
+
+<!-- ───────────────────── MAIN ───────────────────── -->
+<main id="app"></main>
+
+<!-- ───────────────────── FOOTER ───────────────────── -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <i class="fa fa-shopping-bag"></i> <strong>ShopNow</strong>
+      <p>Your one-stop destination for everything you need.</p>
+    </div>
+    <div class="footer-links">
+      <h4>Shop</h4>
+      <a href="/" data-link="/">All Products</a>
+      <a href="/cart" data-link="/cart">Cart</a>
+      <a href="/orders" data-link="/orders">My Orders</a>
+    </div>
+    <div class="footer-links">
+      <h4>Account</h4>
+      <a href="/login" data-link="/login">Login</a>
+      <a href="/register" data-link="/register">Register</a>
+      <a href="/profile" data-link="/profile">Profile</a>
+    </div>
+    <div class="footer-links">
+      <h4>Categories</h4>
+      <a href="/?category=Electronics" data-link="/?category=Electronics">Electronics</a>
+      <a href="/?category=Clothing" data-link="/?category=Clothing">Clothing</a>
+      <a href="/?category=Books" data-link="/?category=Books">Books</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2024 ShopNow. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="/js/app.js"></script>
+</body>
+</html>
